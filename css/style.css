@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+
+body {
+  position: relative;
+  background-color: rgb(88, 161, 224);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navbar h1 {
+  font-size: 42px;
+  padding-left: 30px;
+}
+
+.navbar p {
+  font-size: 25px;
+  padding-right: 150px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navbar p:hover {
+  color: #fff;
+}
+
+.left-content .year {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .make {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .model {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .mileage {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .price {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .color {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content .gas {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.left-content input {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.left-content label {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.left-content {
+  position: relative;
+}
+
+.right-content {
+  position: absolute;
+  justify-content: space-between;
+  left: 35%;
+  top: 1%;
+}
+
+.right-content .card {
+  border: 3px solid;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgb(108, 217, 250);
+}
+
+.right-content .card p {
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.right-content .card button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 5px;
+  width: 150px;
+  background-color: rgb(255, 239, 93);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.right-content .card button:hover {
+  background-color: #fff;
+}
+
+.right-content img {
+  width: 600px;
+  height: 400px;
+}

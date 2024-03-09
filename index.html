@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Car Dealership</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <!-- <script src="./js/usedCars.js"></script> -->
+    <!-- script commented out so that it doesn't impact original HTML just in case -->
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>NP's Used Cars</h1>
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Contact Us</p>
+    </nav>
+    <div class="left-content">
+      <div class="car-year">
+        <h3 class="year">Year</h3>
+        <input type="text" id="year-input" placeholder="Ex: 2020 (YYYY)" />
+        <br />
+      </div>
+
+      <div class="car-make">
+      <h3 class="make">Make</h3>
+      <input type="checkbox" name="Toyota" id="Toyota" />
+      <label for="Toyota">Toyota</label>
+      <br />
+      <input type="checkbox" name="Honda" id="Honda" />
+      <label for="Honda">Honda</label>
+      <br />
+      <input type="checkbox" name="Ford" id="Ford" />
+      <label for="Ford">Ford</label>
+      <br />
+      <input type="checkbox" name="Nissan" id="Nissan" />
+      <label for="Nissan">Nissan</label>
+      <br />
+      <input type="checkbox" name="Cheverolet" id="Cheverolet" />
+      <label for="Cheverolet">Cheverolet</label>
+      <br />
+      <input type="checkbox" name="Volkswagen" id="Volkswagen" />
+      <label for="Volkswagen">Volkswagen</label>
+      <br />
+      <input type="checkbox" name="Hyundai" id="Hyundai" />
+      <label for="Hyundai">Hyundai</label>
+      <br />
+      <input type="checkbox" name="Subaru" id="Subaru" />
+      <label for="Subaru">Subaru</label>
+      <br />
+      <input type="checkbox" name="Mazda" id="Mazda" />
+      <label for="Mazda">Mazda</label>
+      <br />
+      <input type="checkbox" name="Kia" id="Kia" />
+      <label for="Kia">Kia</label>
+      <br />
+      <input type="checkbox" name="Dodge" id="Dodge" />
+      <label for="Dodge">Dodge</label>
+      <br />
+      <input type="checkbox" name="Cadillac" id="Cadillac" />
+      <label for="Cadillac">Cadillac</label>
+      <br />
+      <input type="checkbox" name="Jaguar" id="Jaguar" />
+      <label for="Jaguar">Jaguar</label>
+      <br />
+      <input type="checkbox" name="Tesla" id="Tesla" />
+      <label for="Tesla">Tesla</label>
+      <br />
+      <input type="checkbox" name="Porsche" id="Porsche" />
+      <label for="Porsche">Porsche</label>
+      <br />
+      <input type="checkbox" name="Lexus" id="Lexus" />
+      <label for="Lexus">Lexus</label>
+      <br />
+      <input type="checkbox" name="BMW" id="BMW" />
+      <label for="BMW">BMW</label>
+      <br />
+      </div>
+
+      <div class="car-model">
+      <h3 class="model">Model</h3>
+      <input type="checkbox" name="Camry" id="Camry" />
+      <label for="Camry">Camry</label>
+      <br />
+      <input type="checkbox" name="Civic" id="Civic" />
+      <label for="Civic">Civic</label>
+      <br />
+      <input type="checkbox" name="Fusion" id="Fusion" />
+      <label for="Fusion">Fusion</label>
+      <br />
+      <input type="checkbox" name="Altima" id="Altima" />
+      <label for="Altima">Altima</label>
+      <br />
+      <input type="checkbox" name="Malibu" id="Malibu" />
+      <label for="Malibu">Malibu</label>
+      <br />
+      <input type="checkbox" name="Passat" id="Passat" />
+      <label for="Passat">Passat</label>
+      <br />
+      <input type="checkbox" name="Elantra" id="Elantra" />
+      <label for="Elantra">Elantra</label>
+      <br />
+      <input type="checkbox" name="Outback" id="Outback" />
+      <label for="Outback">Outback</label>
+      <br />
+      <input type="checkbox" name="CX5" id="CX5" />
+      <label for="CX5">CX-5</label>
+      <br />
+      <input type="checkbox" name="Sorento" id="Sorento" />
+      <label for="Sorento">Sorento</label>
+      <br />
+      <input type="checkbox" name="Challenger" id="Challenger" />
+      <label for="Challenger">Challenger</label>
+      <br />
+      <input type="checkbox" name="XT5" id="XT5" />
+      <label for="XT5">XT5</label>
+      <br />
+      <input type="checkbox" name="FPACE" id="FPACE" />
+      <label for="FPACE">F-PACE</label>
+      <br />
+      <input type="checkbox" name="ModelS" id="ModelS" />
+      <label for="ModelS">Model S</label>
+      <br />
+      <input type="checkbox" name="Cayenne" id="Cayenne" />
+      <label for="Cayenne">Cayenne</label>
+      <br />
+      <input type="checkbox" name="ES" id="ES" />
+      <label for="ES">ES</label>
+      <br />
+      <input type="checkbox" name="5Series" id="5Series" />
+      <label for="5Series">5 Series</label>
+      <br />
+      </div>
+
+      <div class="car-mileage">
+      <h3 class="mileage">Mileage</h3>
+      <input type="radio" name="miles" id="miles-20k" />
+      <label for="miles-20k">< 20k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-25k" />
+      <label for="miles-25k">< 25k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-30k" />
+      <label for="miles-30k">< 30k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-35k" />
+      <label for="miles-35k">< 35k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-40k" />
+      <label for="miles-40k">< 40k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-45k" />
+      <label for="miles-45k">< 45k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-50k" />
+      <label for="miles-50k">< 50k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-55k" />
+      <label for="miles-55k">< 55k</label>
+      <br />
+      <input type="radio" name="miles" id="miles-60k" />
+      <label for="miles-60k">< 60k</label>
+      <br />
+
+      <div class="car-price">
+      <h3 class="price">Price</h3>
+      <input type="radio" name="price" id="price-20k" />
+      <label for="price-20k">< $20,000</label>
+      <br />
+      <input type="radio" name="price" id="price-30k" />
+      <label for="price-30k">< $30,000</label>
+      <br />
+      <input type="radio" name="price" id="price-40k" />
+      <label for="price-40k">< $40,000</label>
+      <br />
+      <input type="radio" name="price" id="price-50k" />
+      <label for="price-50k">< $50,000</label>
+      <br />
+      <input type="radio" name="price" id="price-60k" />
+      <label for="price-60k">< $60,000</label>
+      <br />
+      <input type="radio" name="price" id="price-70k" />
+      <label for="price-70k">< $70,000</label>
+      <br />
+      </div>
+      
+
+      <div class="car-color">
+      <h3 class="color">Color</h3>
+      <input type="checkbox" name="color-silver" id="color-silver" />
+      <label for="color-silver">Silver</label>
+      <br />
+      <input type="checkbox" name="color-white" id="color-white" />
+      <label for="">White</label>
+      <br />
+      <input type="checkbox" name="color-black" id="color-black" />
+      <label for="color-black">Black</label>
+      <br />
+      <input type="checkbox" name="color-blue" id="color-blue" />
+      <label for="color-blue">Blue</label>
+      <br />
+      <input type="checkbox" name="color-red" id="color-red" />
+      <label for="color-red">Red</label>
+      <br />
+      <input type="checkbox" name="color-gray" id="color-gray" />
+      <label for="color-gray">Gray</label>
+      <br />
+      <input type="checkbox" name="color-green" id="color-green" />
+      <label for="color-green">Green</label>
+      <br />
+      </div>
+
+      <div class="car-gas">
+      <h3 class="gas">Gas Mileage</h3>
+      <input type="radio" name="gas" id="gas-20" />
+      <label for="gas-20">> 20mpg</label>
+      <br />
+      <input type="radio" name="gas" id="gas-25" />
+      <label for="">> 25mpg</label>
+      <br />
+      <input type="radio" name="gas" id="gas-30" />
+      <label for="">> 30mpg</label>
+      <br />
+      <input type="radio" name="gas" id="electric" />
+      <label for="">Electric</label>
+      <br />
+      </div>
+
+      <div class="right-content">
+      <div class="card">
+        <img src="./assets/Camry.png" alt="Toyota Camry" />
+        <h1>Toyota Camry</h1>
+        <p>Year: 2018</p>
+        <p>Make: Toyota</p>
+        <p>Model: Camry</p>
+        <p>Mileage: 30,000</p>
+        <p>Price: $18,000</p>
+        <p>Color: Silver</p>
+        <p>Gas Mileage: 25mpg City / 35mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Civic.png" alt="Honda Civic" />
+        <h1>Honda Civic</h1>
+        <p>Year: 2016</p>
+        <p>Make: Honda</p>
+        <p>Model: Civic</p>
+        <p>Mileage: 45,000</p>
+        <p>Price: $14,000</p>
+        <p>Color: White</p>
+        <p>Gas Mileage: 30mpg City / 40mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Fusion.png" alt="Ford Fusion" />
+        <h1>Ford Fusion</h1>
+        <p>Year: 2017</p>
+        <p>Make: Ford</p>
+        <p>Model: Fusion</p>
+        <p>Mileage: 35,000</p>
+        <p>Price: $16,000</p>
+        <p>Color: Black</p>
+        <p>Gas Mileage: 28mpg City / 38mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Altima.png" alt="Nissan Altima" />
+        <h1>Nissan Altima</h1>
+        <p>Year: 2019</p>
+        <p>Make: Nissan</p>
+        <p>Model: Altima</p>
+        <p>Mileage: 25,000</p>
+        <p>Price: $17,000</p>
+        <p>Color: Blue</p>
+        <p>Gas Mileage: 27mpg City / 36mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Malibu.png" alt="Cheverolet Malibu" />
+        <h1>Cheverolet Malibu</h1>
+        <p>Year: 2015</p>
+        <p>Make: Cheverolet</p>
+        <p>Model: Malibu</p>
+        <p>Mileage: 50,000</p>
+        <p>Price: $12,000</p>
+        <p>Color: Red</p>
+        <p>Gas Mileage: 25mpg City / 37mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Passat.png" alt="Volkswagen Passat" />
+        <h1>Volkswagen Passat</h1>
+        <p>Year: 2016</p>
+        <p>Make: Volkswagen</p>
+        <p>Model: Passat</p>
+        <p>Mileage: 40,000</p>
+        <p>Price: $15,000</p>
+        <p>Color: Gray</p>
+        <p>Gas Mileage: 29mpg City / 40mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Elantra.png" alt="Hyundai Elantra" />
+        <h1>Hyundai Elantra</h1>
+        <p>Year: 2020</p>
+        <p>Make: Hyundai</p>
+        <p>Model: Elantra</p>
+        <p>Mileage: 22,000</p>
+        <p>Price: $16,000</p>
+        <p>Color: Silver</p>
+        <p>Gas Mileage: 30mpg City, 41mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Outback.png" alt="Subaru Outback" />
+        <h1>Subaru Outback</h1>
+        <p>Year: 2014</p>
+        <p>Make: Subaru</p>
+        <p>Model: Outback</p>
+        <p>Mileage: 60,000</p>
+        <p>Price: $14,000</p>
+        <p>Color: Green</p>
+        <p>Gas Mileage: 22mpg City / 30mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/CX5.png" alt="Mazda CX-5" />
+        <h1>Mazda CX-5</h1>
+        <p>Year: 2017</p>
+        <p>Make: Mazda</p>
+        <p>Model: CX-5</p>
+        <p>Mileage: 32,000</p>
+        <p>Price: $19,000</p>
+        <p>Color: Blue</p>
+        <p>Gas Mileage: 24mpg City / 31mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Sorento.png" alt="Kia Sorento" />
+        <h1>Kia Sorento</h1>
+        <p>Year: 2018</p>
+        <p>Make: Kia</p>
+        <p>Model: Sorento</p>
+        <p>Mileage: 28,000</p>
+        <p>Price: $17,000</p>
+        <p>Color: White</p>
+        <p>Gas Mileage: 22mpg City / 29mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Challenger.png" alt="Dodge Challenger" />
+        <h1>Dodge Challenger</h1>
+        <p>Year: 2015</p>
+        <p>Make: Dodge</p>
+        <p>Model: Challenger</p>
+        <p>Mileage: 30,000</p>
+        <p>Price: $24,000</p>
+        <p>Color: Black</p>
+        <p>Gas Mileage: 19mpg City / 30mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/XT5.png" alt="Cadillac XT5" />
+        <h1>Cadillac XT5</h1>
+        <p>Year: 2017</p>
+        <p>Make: Cadillac</p>
+        <p>Model: XT5</p>
+        <p>Mileage: 28,000</p>
+        <p>Price: $32,000</p>
+        <p>Color: Red</p>
+        <p>Gas Mileage: 19mpg City / 27mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/F-PACE.png" alt="Jaguar F-PACE" />
+        <h1>Jaguar F-PACE</h1>
+        <p>Year: 2018</p>
+        <p>Make: Jaguar</p>
+        <p>Model: F-PACE</p>
+        <p>Mileage: 26,000</p>
+        <p>Price: $38,000</p>
+        <p>Color: Blue</p>
+        <p>Gas Mileage: 18mpg City / 23mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/ModelS.png" alt="Tesla Model S" />
+        <h1>Tesla Model S</h1>
+        <p>Year: 2019</p>
+        <p>Make: Tesla</p>
+        <p>Model: Model S</p>
+        <p>Mileage: 18,000</p>
+        <p>Price: $55,000</p>
+        <p>Color: Black</p>
+        <p>Gas Mileage: Electric (370 miles per charge)</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/Cayenne.png" alt="Porsche Cayenne" />
+        <h1>Porsche Cayenne</h1>
+        <p>Year: 2020</p>
+        <p>Make: Porsche</p>
+        <p>Model: Cayenne</p>
+        <p>Mileage: 22,000</p>
+        <p>Price: $68,000</p>
+        <p>Color: White</p>
+        <p>Gas Mileage: 20mpg City / 26mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/ES.png" alt="Lexus ES" />
+        <h1>Lexus ES</h1>
+        <p>Year: 2017</p>
+        <p>Make: Lexus</p>
+        <p>Model: ES</p>
+        <p>Mileage: 29,000</p>
+        <p>Price: 26,000</p>
+        <p>Color: White</p>
+        <p>Gas Mileage: 21mpg City / 30mpg Highway</p>
+        <button>Explore</button>
+      </div>
+      <div class="card">
+        <img src="./assets/5series.png" alt="BMW 5 Series" />
+        <h1>BMW 5 Series</h1>
+        <p>Year: 2016</p>
+        <p>Make: BMW</p>
+        <p>Model: 5 Series</p>
+        <p>Mileage: 32,000</p>
+        <p>Price: $27,000</p>
+        <p>Color: Black</p>
+        <p>Gas Mileage: 23mpg City / 34mpg Highway</p>
+        <button>Explore</button>
+      </div>
+    </div>
+  </body>
+</html>
